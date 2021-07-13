@@ -1,0 +1,8 @@
+prefix=/home/shamaine/catkin_ws/devel
+
+Name: models_spawn_library_pkg
+Description: Description of models_spawn_library_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

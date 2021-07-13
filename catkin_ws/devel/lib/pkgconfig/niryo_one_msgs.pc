@@ -1,0 +1,8 @@
+prefix=/home/shamaine/catkin_ws/devel
+
+Name: niryo_one_msgs
+Description: Description of niryo_one_msgs
+Version: 2.2.0
+Cflags: -I/home/shamaine/catkin_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs message_runtime actionlib_msgs geometry_msgs moveit_msgs

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find file_server)/launch/ros_sharp_communication.launch">
+		<arg name="port" value="9090" />
+    </include>
+    <!-- Gazebo world -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch" />
+    
+    <!-- URDF -->
+    <param name="robot_description" command="$(find xacro)/xacro --inorder $(find niryo_one_description)/urdf/gazebo_niryo_one.urdf.xacro" />
+    <arg name="x" default="0"/>
+    <arg name="y" default="0"/>
+    <arg name="z" default="0"/>
+
+    <!-- Gazebo model - add a delay to let the controller start properly -->
+    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" 
+        args="-param robot_description -urdf -model niryo_one -x $(arg x) -y $(arg y) -z $(arg z)" respawn="false" output="screen"/>
+  
+</launch>

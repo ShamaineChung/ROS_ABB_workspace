@@ -1,0 +1,8 @@
+prefix=/home/shamaine/catkin_ws/devel
+
+Name: abb_irb1200_5_90_moveit_config
+Description: Description of abb_irb1200_5_90_moveit_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

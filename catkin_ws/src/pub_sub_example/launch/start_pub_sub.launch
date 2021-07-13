@@ -1,0 +1,15 @@
+<launch>
+
+  <!-- Start MoveIt -->
+  <include file="$(find rbkairos_moveit_config)/launch/rbkairos_planning_execution.launch" >
+  </include>
+
+  <!-- Start Publisher -->
+  <node name="trajectory_publisher_node" pkg="pub_sub_example" type="position_publisher.py" >
+  </node>
+
+  <!-- Start Publisher -->
+  <node name="trajectory_subscriber_node" pkg="pub_sub_example" type="position_subscriber.py" >
+  </node>
+
+</launch>

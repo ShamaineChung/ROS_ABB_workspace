@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="paused" default="false"/>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="debug" default="false"/>
+
+    <include file="$(find file_server)/launch/ros_sharp_communication.launch">
+		<arg name="port" value="9090" />
+    </include>
+
+<!-- remap topics to conform to ROS-I specifications -->
+  <remap from="/arm_controller/follow_joint_trajectory" to="/joint_trajectory_action" />
+  <remap from="/arm_controller/state" to="/feedback_states" />
+  <remap from="/arm_controller/command" to="/joint_path_command"/>
+
+    <!-- Gazebo world -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find file_server)/worlds/abb_with_cell.world"/>
+    <arg name="debug" value="$(arg debug)" />
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="headless" value="$(arg headless)"/>
+   </include>
+    
+
+    <!-- URDF -->
+     <param name="robot_description" command="$(find xacro)/xacro --inorder $(find abb_irb1200_gazebo)/urdf/irb1200_5_90.xacro" />
+  
+
+    <!-- Gazebo model - add a delay to let the controller start properly -->
+
+    <!-- spawn robot in gazebo -->
+    <node name="abb_irb1200_spawn" pkg="gazebo_ros" type="spawn_model" output="screen" args="-urdf -param robot_description -model abb_irb1200_5_90" />
+
+
+    <!-- publish joint states in TF -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" output="screen" />
+    <!-- init and start Gazebo ros_control interface -->
+
+   <!-- init and start Gazebo ros_control interface -->
+  <include file="$(find abb_irb1200_gazebo)/launch/irb1200_5_90_control.launch"/>
+  
+</launch>

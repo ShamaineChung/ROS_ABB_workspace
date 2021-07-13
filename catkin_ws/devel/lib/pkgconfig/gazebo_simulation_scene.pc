@@ -1,0 +1,8 @@
+prefix=/home/shamaine/catkin_ws/devel
+
+Name: gazebo_simulation_scene
+Description: Description of gazebo_simulation_scene
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
