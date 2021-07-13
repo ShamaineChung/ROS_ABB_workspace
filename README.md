@@ -5,6 +5,7 @@ In order to implement this workspace, a suitable environment needs to be prepare
 1. [Hyper-V installation](#hyper-v)
 2. [Ubuntu 16 Installation](#ubuntu-16)
 3. [ROS Installation](#ros-robot-operating-system)
+4. [ROS Robot Initialization](#launching-robot-controller)
 
 ## Hyper-V 
 Ubuntu 16.04 is needed to setup as foundation of ROS software packages. The Ubuntu OS is deployed onto Hyper-V Virtual Machine Service which is available in Window Pro and Window Enterprise only. To enable Hyper-V, follow the steps in [Steps to enable Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v#:~:text=Right%20click%20on%20the%20Windows,Hyper%2DV%20and%20click%20OK.). 
@@ -52,3 +53,7 @@ After the configuration, open a terminal and run this command ```sudo apt update
 ## ROS-Robot Operating System
 
 The installation is in this website [Step to install ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu). Then follow this [Configurating ROS environment](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment) to setup the ROS environment. After configuration has benn done, download the catkin workspace in this repository, replace it with the current workspace and run ```catkin_make``` again.
+
+## Launching Robot Controller
+
+First step is to launch a server to establish the connection with Hololens with ```roslaunch file_server abb_world2.launch```.
