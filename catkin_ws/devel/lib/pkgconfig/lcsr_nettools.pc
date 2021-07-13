@@ -1,8 +1,0 @@
-prefix=/home/shamaine/catkin_ws/devel
-
-Name: lcsr_nettools
-Description: Description of lcsr_nettools
-Version: 0.1.0
-Cflags: -I/home/shamaine/catkin_ws/devel/include
-Libs: -L${prefix}/lib 
-Requires: 

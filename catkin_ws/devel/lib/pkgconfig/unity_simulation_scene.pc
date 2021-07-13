@@ -1,8 +1,0 @@
-prefix=/home/shamaine/catkin_ws/devel
-
-Name: unity_simulation_scene
-Description: Description of unity_simulation_scene
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

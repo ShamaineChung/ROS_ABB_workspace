@@ -1,8 +1,0 @@
-prefix=/home/shamaine/catkin_ws/devel
-
-Name: myrobot_moveit_config
-Description: Description of myrobot_moveit_config
-Version: 0.3.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
