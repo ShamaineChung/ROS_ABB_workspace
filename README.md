@@ -3,7 +3,7 @@
 Please cite using the following BibTex entry:
 
 ```
- @masterthesis{ShamaineChung2021,
+ @MastersThesis{ShamaineChung2021,
   title={RoSTAR: ROS-based Telerobotic Control via Augmented Reality},
   author={Shamaine, Niall, YuanSong},
   school={Athlone Institute of Technology, Ireland},
