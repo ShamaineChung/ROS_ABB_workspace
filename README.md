@@ -1,5 +1,18 @@
 # ROS_ABB_workspace
 
+Please cite using the following BibTex entry:
+
+```
+ @masterthesis{ShamaineChung2021,
+  title={RoSTAR: ROS-based Telerobotic Control via Augmented Reality},
+  author={Shamaine, Niall, YuanSong},
+  school={Athlone Institute of Technology, Ireland},
+  year=2021,
+  publisher = {GitHub}
+  howpublished = {\url{https://github.com/ShamaineChung/ROS_ABB_workspace}},
+}
+```
+
 In order to implement this workspace, a suitable environment needs to be prepared.
 
 1. [Hyper-V installation](#hyper-v)
