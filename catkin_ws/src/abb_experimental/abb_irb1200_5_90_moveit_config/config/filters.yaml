@@ -1,0 +1,9 @@
+service-type: FilterJOintTrajectoryWithConstraints
+filter-chain:
+
+  name: unnormalize_trajectory
+  type: UnnormalizeFilterJointTrajectryWithConstraints
+
+  name: cubic_spline_short_cutter_smoother
+  type: CubicSplineShortCutterFilterJointTrajectoryWithConstraints
+  params: {descretization: 0.01}
