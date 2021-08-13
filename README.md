@@ -18,6 +18,8 @@ This project ABB Robot Model heavily relies on the ROS Industrial Meta Package d
 
 A folder contain unity frame rate, path accuracy and absolute position accuracy data.
 
+## Installation
+
 In order to implement this workspace, a suitable environment needs to be prepared.
 
 1. [Hyper-V installation](#hyper-v)
