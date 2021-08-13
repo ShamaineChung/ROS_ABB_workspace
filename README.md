@@ -80,6 +80,6 @@ Before launching the server script, an ethernet cable need to be connected betwe
 
 First step is to open a terminal and launch a server to establish the connection with Hololens by executing this command ```roslaunch file_server abb_world2.launch```. Then start another terminal which execute this command ``` roslaunch abb_irb1200_5_90_moveit_config abb_planning_execution.launch sim:=false robot_ip:=192.168.44.23``` to establish connection with ABB robot. Open a third terminal to subscribe to Hololens robot state and coordinate topic in real-time by executing ``` rosrun pub_sub_example robot_manipulator_v1.py```. 
 
-**Both Version 1 and 2 can execute trajectory. Version 1 collect path accuracy data, matplotlib will get the current end effector pose every second. Version 2 collect absolute position accuracy data, the position measurement are stored only after the end effector arrived at each pose.**
+**Both Version 1 and 2 is able to execute ABB robot arm trajectory. Version 1 collect path accuracy data, matplotlib will get the current end effector pose every second. Version 2 collect absolute position accuracy data, the position measurement are stored only after the end effector arrived at each pose.**
 
 If error occurs, check the incoming message of topic with ```rostopic /ee_pose```.
