@@ -1,5 +1,0 @@
-float64 msg_loss
-time first_recv_time
-time latest_recv_time
-lcsr_nettools/StatisticsMeasurements latency
-lcsr_nettools/StatisticsMeasurements frequency
