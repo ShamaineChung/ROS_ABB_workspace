@@ -12,6 +12,7 @@ Please cite using the following BibTex entry:
   howpublished = {\url{https://github.com/ShamaineChung/ROS_ABB_workspace}},
 }
 ```
+This project ABB Robot Model heavily relies on the ROS Industrial Meta Package developed and maintained by Open Robotics. More specifically, it is a fork of 
 
 In order to implement this workspace, a suitable environment needs to be prepared.
 
