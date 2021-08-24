@@ -106,7 +106,7 @@ On the server  side: Open a new terminal enter command ```ifconfig``` to check t
 
 Before launching the server script, an ethernet cable need to be connected between ABB robot and current system. A hotspot need to be ready for connection between Hololens 2 and local system as well. 
 
-After following the above steps, on the ABB flex pendant, press the acknowledge button. 
+After following the above steps, on the ABB flex pendant, ignore the random error and press the acknowledge button. 
 
 Run the ROS driver on the ABB flex pendant by navigate to Production Window > Press PP to Main > Click OK. 
 
