@@ -81,9 +81,14 @@ On the server  side: Open a new terminal enter command ```ifconfig``` to check t
 
 1. Make sure the Laptop WIFI and Hololens 2 are connected to the same mobile WIFI hotspot. 
 2. The college edureom wifi blocked such connection, recommend to use your own wifi to reduce complication.
-3. The ABB1200_5_90 robot arm is configure with a fix ip address of 192.168.44.23 using the RobotStudio software on WAN port. 
-4. The HoloLens 2 using DHCP within the subnet of 192.168.43.56, there is no need to configure a fix ip on the HoloLens 2. 
-5. Make sure the ABB robot controller ethernet cable is plug into the laptop ethernet port before verifying the connections.
+3. The ABB1200_5_90 robot arm is pre-configure with a fix ip address of 192.168.44.23 using the RobotStudio software on WAN port. 
+5. The HoloLens 2 using DHCP within the subnet of 192.168.43.56, there is no need to configure a fix ip on the HoloLens 2. 
+6. Make sure the ABB robot controller ethernet cable is plug into the laptop ethernet port before verifying the connections.
+7. When Power On the ABB controlller, make sure the ABB robot controller is switch from manual to auto mode (turn the inserted key). 
+8. After the ABB Flex Pendant finish loading, navigate to the ABB robot controller and press the white motor button, an orange light indicate as active. 
+
+![controller](https://user-images.githubusercontent.com/86027470/130615864-69c8907f-b1f4-4471-b9da-9ca74a1b856d.png)
+
 
 ## ROS-Robot Operating System
 
