@@ -25,7 +25,7 @@ In order to implement this workspace, a suitable environment needs to be prepare
 1. [Hyper-V installation](#hyper-v)
 2. [Ubuntu 16 Installation](#ubuntu-16)
 3. [ROS Installation](#ros-robot-operating-system)
-4. [Virtual Adapters Configuration](#configure Virtual Adapters on Hyper-V)
+4. [Virtual Adapters Configuration](#configure-Virtual-Adapters-on-Hyper-V)
 5. [ROS Robot Initialization](#launching-robot-controller)
 
 ## Hyper-V 
