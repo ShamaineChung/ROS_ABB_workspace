@@ -75,7 +75,7 @@ After setting up the external adapters, check the network bridge status on Windo
 
 ![Network bridge](https://user-images.githubusercontent.com/86027470/130608795-69a04ce2-af1f-4e03-b310-7642748ab2cf.png)
 
-On the server  side: open a new terminal enter command ```ifconfig``` to check the network status and make sure both 192.168.43.56 and 192.168.44.23 adapters are active and connected. **Make sure the Laptop WIFI and Hololens 2 are connected to the same mobile WIFI hotspot. The college edureom wifi blocked such connection, recommend to use own wifi**
+On the server  side: Open a new terminal enter command ```ifconfig``` to check the network status and make sure both 192.168.43.56 and 192.168.44.23 adapters are active and connected. **Make sure the Laptop WIFI and Hololens 2 are connected to the same mobile WIFI hotspot. The college edureom wifi blocked such connection, recommend to use own wifi**
 
 ## ROS-Robot Operating System
 
