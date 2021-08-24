@@ -122,4 +122,4 @@ After the ABB Flex pendant is running. First , we open a terminal and launch a s
 
 **Both Version 1 and 2 is able to execute ABB robot arm trajectory. Version 1 collect path accuracy data, matplotlib will get the current end effector pose every second. Version 2 collect absolute position accuracy data, the position measurement are stored only after the end effector arrived at each pose.**
 
-If error occurs, check the incoming message of topic with ```rostopic /ee_pose```.
+If error occurs, check the incoming message of the end-effector topic from HoloLens 2 with ```rostopic /ee_pose```.
