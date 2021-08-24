@@ -42,6 +42,10 @@ Change the **External Network** dropdown bar to physical wireless adapter for th
 
 ![Capture](https://user-images.githubusercontent.com/86027470/125274162-993a2b80-e305-11eb-84b8-1415b0766d3f.PNG)
 
+After setting up the external adapters, check the network bridge status on Window:
+![Network bridge](https://user-images.githubusercontent.com/86027470/130608795-69a04ce2-af1f-4e03-b310-7642748ab2cf.png)
+
+On the server  side: open a new terminal enter command ifconfig to check the network status and make sure both 192.168.43.56 and 192.168.44.23 adapters are active and connected. 
 
 An example setup are as below.
 
