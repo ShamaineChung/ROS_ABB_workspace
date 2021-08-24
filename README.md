@@ -65,7 +65,7 @@ Then go to Hyper-V setting of Ubuntu 16.04 virtual machine.
 
 ![Capture](https://user-images.githubusercontent.com/86027470/125275372-d652ed80-e306-11eb-86d5-1cf7415605e4.PNG)
 
-The Virtual machine has one network adapter initially, a new network adapter is needed since two virtual switch is created. Add a **Network Adapter** and attached both wireless and ethernet virtual switch to each individual network adapter.
+The Virtual machine has one network adapter initially, a new network adapter is needed since two virtual switches are created. Add a **Network Adapter** and attached both wireless and ethernet virtual switch to each individual network adapter.
 
 ![Capture](https://user-images.githubusercontent.com/86027470/125277476-6003ba80-e309-11eb-88bf-ebc65b89c0da.PNG)
 
