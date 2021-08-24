@@ -111,7 +111,7 @@ Run the ROS driver on the ABB flex pendant by navigate to Production Window > Pr
 
 ![production window](https://user-images.githubusercontent.com/86027470/130640070-2e260295-e5e1-48a8-95b4-7b7e30db1715.png)
 
-ABB Flex Pendant will show something similar to this image with Robot ip. This image is just for references. 
+ABB Flex Pendant will show something similar to this image with Robot ip. This image is not taken from the lab and is just for reference.
 
 ![Flex Pendant is active](https://user-images.githubusercontent.com/86027470/130641845-97502dcb-86cb-49c3-ac17-2d5e1d2b8a10.jpg)
 
