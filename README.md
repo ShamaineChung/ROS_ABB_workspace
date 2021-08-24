@@ -45,7 +45,7 @@ The installation is in this website [Step to install ROS Kinetic](http://wiki.ro
 
 ## Configure Virtual Adapters on Hyper-V 
 
-After enabling Hyper-V, follow [Ubuntu 16.04 installation steps](https://www.youtube.com/watch?v=B_tnnDlUuzw&ab_channel=PeymanTechMedia). When Ubuntu is ready to use, go to **Virtual Switch Manager**.
+When Ubuntu is ready to use, go to **Virtual Switch Manager**.
 
 ![Capture](https://user-images.githubusercontent.com/86027470/125273341-ba4e4c80-e304-11eb-85d8-e0c147879275.PNG)
 
