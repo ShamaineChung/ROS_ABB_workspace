@@ -112,7 +112,10 @@ Run the ROS driver on the ABB flex pendant by navigate to Production Window > Pr
 
 ![production window](https://user-images.githubusercontent.com/86027470/130640070-2e260295-e5e1-48a8-95b4-7b7e30db1715.png)
 
-![Flex Pendant is active](https://user-images.githubusercontent.com/86027470/130641430-d0888c5f-45dd-45fa-b92e-78863af44129.jpg)
+ABB Flex Pendant will show something similar to this image with Robot ip. This image is just for references. 
+
+![Flex Pendant is active](https://user-images.githubusercontent.com/86027470/130641845-97502dcb-86cb-49c3-ac17-2d5e1d2b8a10.jpg)
+
 
 
 After the ABB Flex pendant is running. First , we open a terminal and launch a server to establish the connection with Hololens by executing this command ```roslaunch file_server abb_world2.launch```, if Hololens is connected to the file server a notificatio similar to this text will be shown ```[INFO][...] 1 client connected.```. Then start another terminal which execute this command ``` roslaunch abb_irb1200_5_90_moveit_config abb_planning_execution.launch sim:=false robot_ip:=192.168.44.23``` to establish connection with ABB robot. Open a third terminal to subscribe to Hololens robot state and coordinate topic in real-time by executing ``` rosrun pub_sub_example robot_manipulator_v1.py```. 
