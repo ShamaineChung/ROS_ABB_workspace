@@ -30,9 +30,10 @@ In order to implement this workspace, a suitable environment needs to be prepare
 
 
 ## Hyper-V 
-Ubuntu 16.04 is needed to setup as foundation of ROS software packages. The Ubuntu OS is deployed onto Hyper-V Virtual Machine Service which is available in Window Pro and Window Enterprise only. To enable Hyper-V, follow the steps in [Steps to enable Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v#:~:text=Right%20click%20on%20the%20Windows,Hyper%2DV%20and%20click%20OK.). 
+To enable Hyper-V, follow the steps in [Steps to enable Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v#:~:text=Right%20click%20on%20the%20Windows,Hyper%2DV%20and%20click%20OK.). 
 
 ## Ubuntu 16
+Ubuntu 16.04 is needed to setup as foundation of ROS software packages. The Ubuntu OS is deployed onto Hyper-V Virtual Machine Service which is available in Window Pro and Window Enterprise only.
 
 Follow the steps in [Installation of Ubuntu 16.04](https://www.youtube.com/watch?v=B_tnnDlUuzw&ab_channel=PeymanTechMedia). 
 
@@ -42,14 +43,14 @@ Follow the steps in [Installation of Ubuntu 16.04](https://www.youtube.com/watch
 The installation is in this website [Step to install ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu). Then follow this [Configurating ROS environment](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment) to setup the ROS environment. After configuration has been done, download the catkin workspace in this repository, replace it with the current workspace and run ```catkin_make``` again.
 
 
+## Configure Virtual Adapters on Hyper-V 
+
 After enabling Hyper-V, follow [Ubuntu 16.04 installation steps](https://www.youtube.com/watch?v=B_tnnDlUuzw&ab_channel=PeymanTechMedia). When Ubuntu is ready to use, go to **Virtual Switch Manager**.
 
 ![Capture](https://user-images.githubusercontent.com/86027470/125273341-ba4e4c80-e304-11eb-85d8-e0c147879275.PNG)
 
-## Configure Virtual Adapters on Hyper-V 
-
-
 Create two virtual switch with names that indicates one is attached to physical ethernet adapter another is attached to wireless adapter. Click **New virtual network switch**, choose **External** then click **Create Virtual Swtich**. 
+
 ![Capture](https://user-images.githubusercontent.com/86027470/125273104-7bb89200-e304-11eb-84b5-38e6f332c8a9.PNG)
 
 Change the **External Network** dropdown bar to physical wireless adapter for the first switch and physical ethernet adapter for the second.
