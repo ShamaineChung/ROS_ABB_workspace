@@ -25,7 +25,8 @@ In order to implement this workspace, a suitable environment needs to be prepare
 1. [Hyper-V installation](#hyper-v)
 2. [Ubuntu 16 Installation](#ubuntu-16)
 3. [ROS Installation](#ros-robot-operating-system)
-4. [ROS Robot Initialization](#launching-robot-controller)
+4. [Virtual Adapters Configuration] (#configure Virtual Adapters on Hyper-V )
+5. [ROS Robot Initialization](#launching-robot-controller)
 
 ## Hyper-V 
 Ubuntu 16.04 is needed to setup as foundation of ROS software packages. The Ubuntu OS is deployed onto Hyper-V Virtual Machine Service which is available in Window Pro and Window Enterprise only. To enable Hyper-V, follow the steps in [Steps to enable Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v#:~:text=Right%20click%20on%20the%20Windows,Hyper%2DV%20and%20click%20OK.). 
@@ -56,7 +57,16 @@ The Virtual machine has one network adapter initially, a new network adapter is 
 
 ## Ubuntu 16
 
-Follow the steps in [Installation of Ubuntu 16.04](https://www.youtube.com/watch?v=B_tnnDlUuzw&ab_channel=PeymanTechMedia). After the installation, find the **Network Connection**.
+Follow the steps in [Installation of Ubuntu 16.04](https://www.youtube.com/watch?v=B_tnnDlUuzw&ab_channel=PeymanTechMedia). 
+
+## ROS-Robot Operating System
+
+The installation is in this website [Step to install ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu). Then follow this [Configurating ROS environment](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment) to setup the ROS environment. After configuration has been done, download the catkin workspace in this repository, replace it with the current workspace and run ```catkin_make``` again.
+
+
+## Configure Virtual Adapters on Hyper-V 
+
+After the installation, find the **Network Connection**.
 
 ![Capture](https://user-images.githubusercontent.com/86027470/125305610-618fab80-e326-11eb-9bb7-638068072958.PNG)
 
@@ -76,7 +86,6 @@ After setting up the external adapters, check the network bridge status on Windo
 ![Network bridge](https://user-images.githubusercontent.com/86027470/130608795-69a04ce2-af1f-4e03-b310-7642748ab2cf.png)
 
 
-
 On the server  side: Open a new terminal enter command ```ifconfig``` to check the network status and make sure both 192.168.43.56 and 192.168.44.3 adapters are active and ```ping 192.168.44.23```  to ensure the connection to ABB robot is active. 
 
 1. Make sure the Laptop WIFI and Hololens 2 are connected to the same mobile WIFI hotspot. 
@@ -89,10 +98,6 @@ On the server  side: Open a new terminal enter command ```ifconfig``` to check t
 
 ![controller](https://user-images.githubusercontent.com/86027470/130615864-69c8907f-b1f4-4471-b9da-9ca74a1b856d.png)
 
-
-## ROS-Robot Operating System
-
-The installation is in this website [Step to install ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu). Then follow this [Configurating ROS environment](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment) to setup the ROS environment. After configuration has been done, download the catkin workspace in this repository, replace it with the current workspace and run ```catkin_make``` again.
 
 ## Launching Robot Controller
 
