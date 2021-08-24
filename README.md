@@ -73,7 +73,7 @@ After the configuration, open a terminal and run this command ```sudo apt update
 
 ## ROS-Robot Operating System
 
-The installation is in this website [Step to install ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu). Then follow this [Configurating ROS environment](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment) to setup the ROS environment. After configuration has benn done, download the catkin workspace in this repository, replace it with the current workspace and run ```catkin_make``` again.
+The installation is in this website [Step to install ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu). Then follow this [Configurating ROS environment](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment) to setup the ROS environment. After configuration has been done, download the catkin workspace in this repository, replace it with the current workspace and run ```catkin_make``` again.
 
 ## Launching Robot Controller
 
