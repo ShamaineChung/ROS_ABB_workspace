@@ -26,7 +26,8 @@ In order to implement this workspace, a suitable environment needs to be prepare
 2. [Ubuntu 16 Installation](#ubuntu-16)
 3. [ROS Installation](#ros-robot-operating-system)
 4. [Virtual Adapters Configuration](#configure-Virtual-Adapters-on-Hyper-V)
-5. [ROS Robot Initialization](#launching-robot-controller)
+5. [The ABB FLEX Pendant](#Configure-the-ABB-touch-screen-FLEX-Pendant)
+6. [ROS Robot Initialization](#launching-robot-controller)
 
 
 ## Hyper-V 
@@ -102,9 +103,7 @@ On the server  side: Open a new terminal enter command ```ifconfig``` to check t
 ![controller](https://user-images.githubusercontent.com/86027470/130615864-69c8907f-b1f4-4471-b9da-9ca74a1b856d.png)
 
 
-## Launching Robot Controller
-
-Before launching the server script, an ethernet cable need to be connected between ABB robot and current system. A hotspot need to be ready for connection between Hololens 2 and local system as well. 
+## Configure the ABB touch screen FLEX Pendant
 
 After following the above steps, on the ABB flex pendant, ignore the random error and press the acknowledge button. 
 
@@ -117,6 +116,7 @@ ABB Flex Pendant will show something similar to this image with Robot ip. This i
 ![Flex Pendant is active](https://user-images.githubusercontent.com/86027470/130641845-97502dcb-86cb-49c3-ac17-2d5e1d2b8a10.jpg)
 
 
+## Launching Robot Controller
 
 After the ABB Flex pendant is running. First , we open a terminal and launch a server to establish the connection with Hololens by executing this command ```roslaunch file_server abb_world2.launch```, if Hololens is connected to the file server a notificatio similar to this text will be shown ```[INFO][...] 1 client connected.```. Then start another terminal which execute this command ``` roslaunch abb_irb1200_5_90_moveit_config abb_planning_execution.launch sim:=false robot_ip:=192.168.44.23``` to establish connection with ABB robot. Open a third terminal to subscribe to Hololens robot state and coordinate topic in real-time by executing ``` rosrun pub_sub_example robot_manipulator_v1.py```. 
 
