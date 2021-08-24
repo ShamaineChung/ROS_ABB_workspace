@@ -77,7 +77,9 @@ After setting up the external adapters, check the network bridge status on Windo
 
 
 
-On the server  side: Open a new terminal enter command ```ifconfig``` to check the network status and make sure both 192.168.43.56 and 192.168.44.3 adapters are active and ```ping 192.168.44.23```  to assure the connection to robot is active. **Make sure the Laptop WIFI and Hololens 2 are connected to the same mobile WIFI hotspot. The college edureom wifi blocked such connection, recommend to use own wifi**
+On the server  side: Open a new terminal enter command ```ifconfig``` to check the network status and make sure both 192.168.43.56 and 192.168.44.3 adapters are active and ```ping 192.168.44.23```  to assure the connection to robot is active. 
+1. [Make sure the Laptop WIFI and Hololens 2 are connected to the same mobile WIFI hotspot. The college edureom wifi blocked such connection, recommend to use own wifi]
+2. [Make sure the ABB robot controller ethernet cable is plug into the laptop ethernet port]
 
 ## ROS-Robot Operating System
 
