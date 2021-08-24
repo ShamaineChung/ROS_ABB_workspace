@@ -42,11 +42,6 @@ Change the **External Network** dropdown bar to physical wireless adapter for th
 
 ![Capture](https://user-images.githubusercontent.com/86027470/125274162-993a2b80-e305-11eb-84b8-1415b0766d3f.PNG)
 
-After setting up the external adapters, check the network bridge status on Window:
-![Network bridge](https://user-images.githubusercontent.com/86027470/130608795-69a04ce2-af1f-4e03-b310-7642748ab2cf.png)
-
-On the server  side: open a new terminal enter command ifconfig to check the network status and make sure both 192.168.43.56 and 192.168.44.23 adapters are active and connected. 
-
 An example setup are as below.
 
 ![Untitled](https://user-images.githubusercontent.com/86027470/125274877-48770280-e306-11eb-814d-1e5dff5e5cb5.png)
@@ -74,6 +69,11 @@ Then change the second connection to the *IP Address*.
 ![Capture](https://user-images.githubusercontent.com/86027470/125306820-6f91fc00-e327-11eb-9f0a-ce493c22bcbe.PNG)
 
 After the configuration, open a terminal and run this command ```sudo apt update && sudo apt upgrade -y```, this will update the Ubuntu software package to the latest version.
+
+After setting up the external adapters, check the network bridge status on Window Client Side:
+![Network bridge](https://user-images.githubusercontent.com/86027470/130608795-69a04ce2-af1f-4e03-b310-7642748ab2cf.png)
+
+On the server  side: open a new terminal enter command ifconfig to check the network status and make sure both 192.168.43.56 and 192.168.44.23 adapters are active and connected. 
 
 ## ROS-Robot Operating System
 
