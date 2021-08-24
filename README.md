@@ -71,6 +71,8 @@ Then change the second connection to the *IP Address*.
 After the configuration, open a terminal and run this command ```sudo apt update && sudo apt upgrade -y```, this will update the Ubuntu software package to the latest version.
 
 After setting up the external adapters, check the network bridge status on Window Client Side:
+
+
 ![Network bridge](https://user-images.githubusercontent.com/86027470/130608795-69a04ce2-af1f-4e03-b310-7642748ab2cf.png)
 
 On the server  side: open a new terminal enter command ```ifconfig``` to check the network status and make sure both 192.168.43.56 and 192.168.44.23 adapters are active and connected. 
