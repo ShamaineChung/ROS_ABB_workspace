@@ -26,7 +26,7 @@ In order to implement this workspace, a suitable environment needs to be prepare
 2. [Ubuntu 16 Installation](#ubuntu-16)
 3. [ROS Installation](#ros-robot-operating-system)
 4. [Virtual Adapters Configuration](#configure-Virtual-Adapters-on-Hyper-V)
-5. [The ABB FLEX Pendant](#Configure-the-ABB-touch-screen-FLEX-Pendant)
+5. [The ABB Flex Pendant](#Configure-the-ABB-touch-screen-Flex-Pendant)
 6. [ROS Robot Initialization](#launching-robot-controller)
 
 
@@ -103,7 +103,7 @@ On the server  side: Open a new terminal enter command ```ifconfig``` to check t
 ![controller](https://user-images.githubusercontent.com/86027470/130615864-69c8907f-b1f4-4471-b9da-9ca74a1b856d.png)
 
 
-## Configure the ABB touch screen FLEX Pendant
+## Configure the ABB touch screen Flex Pendant
 
 After following the above steps, on the ABB flex pendant, ignore the random error and press the acknowledge button. 
 
