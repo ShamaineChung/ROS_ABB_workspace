@@ -41,7 +41,7 @@ Follow the steps in [Installation of Ubuntu 16.04](https://www.youtube.com/watch
 
 ## ROS-Robot Operating System
 
-The installation is in this website [Step to install ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu). Then follow this [Configurating ROS environment](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment) to setup the ROS environment. After configuration has been done, download the catkin workspace in this repository, replace it with the current workspace and run ```catkin_make``` again.
+The ROS installation is on this website [Step to install ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu). Then follow this [Configurating ROS environment](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment) to setup the ROS environment. After configuration has been done, download the catkin workspace in this repository, replace it with the current workspace and run ```catkin_make``` again.
 
 
 ## Configure Virtual Adapters on Hyper-V 
