@@ -34,7 +34,7 @@ In order to implement this workspace, a suitable environment needs to be prepare
 To enable Hyper-V, follow the steps in [Steps to enable Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v#:~:text=Right%20click%20on%20the%20Windows,Hyper%2DV%20and%20click%20OK.). Please note that the Hyper-V Virtual Machine Service is only available on the Window Pro and Window Enterprise version.
 
 ## Ubuntu 16
-Ubuntu 16.04 is needed to setup as foundation of ROS software packages. The Ubuntu OS is deployed onto Hyper-V Virtual Machine.
+Ubuntu 16.04 is needed to setup as foundation of ROS software packages. The Ubuntu OS is deployed onto Hyper-V Virtual Machine. Please note that the whole project is only compatible with Ubuntu 16. Other version will not work. 
 
 Follow the steps in [Installation of Ubuntu 16.04](https://www.youtube.com/watch?v=B_tnnDlUuzw&ab_channel=PeymanTechMedia). 
 
